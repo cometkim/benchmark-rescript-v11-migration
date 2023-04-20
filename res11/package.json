@@ -1,0 +1,11 @@
+{
+  "name": "rescript-msgpack",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "rescript build"
+  },
+  "devDependencies": {
+    "esbuild": "^0.17.17",
+    "rescript": "^11.0.0-alpha.4"
+  }
+}

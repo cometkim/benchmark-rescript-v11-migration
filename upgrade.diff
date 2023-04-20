@@ -1,0 +1,274 @@
+91c91
+<       if (typeof state === "number") {
+---
+>       if (typeof state !== "object") {
+97c97
+<             TAG: /* Done */5,
+---
+>             TAG: "Done",
+106c106
+<             TAG: /* DecodeMap */2,
+---
+>             TAG: "DecodeMap",
+116c116
+<             TAG: /* DecodeArray */1,
+---
+>             TAG: "DecodeArray",
+126c126
+<             TAG: /* DecodeString */0,
+---
+>             TAG: "DecodeString",
+135c135
+<                 TAG: /* Done */5,
+---
+>                 TAG: "Done",
+144c144
+<                 TAG: /* Done */5,
+---
+>                 TAG: "Done",
+151c151
+<                 TAG: /* Done */5,
+---
+>                 TAG: "Done",
+159c159
+<                 TAG: /* DecodeBinary */3,
+---
+>                 TAG: "DecodeBinary",
+167c167
+<                 TAG: /* DecodeBinary */3,
+---
+>                 TAG: "DecodeBinary",
+175c175
+<                 TAG: /* DecodeBinary */3,
+---
+>                 TAG: "DecodeBinary",
+185c185
+<                   TAG: /* DecodeExt */4,
+---
+>                   TAG: "DecodeExt",
+193c193
+<                 return Js_exn.raiseError("Unknown extension type " + String(type_) + "");
+---
+>                 return Js_exn.raiseError("Unknown extension type " + String(type_));
+197c197
+<                 TAG: /* DecodeExt */4,
+---
+>                 TAG: "DecodeExt",
+207c207
+<                 return Js_exn.raiseError("Unknown extension type " + String(type_$1) + "");
+---
+>                 return Js_exn.raiseError("Unknown extension type " + String(type_$1));
+211c211
+<                 TAG: /* DecodeExt */4,
+---
+>                 TAG: "DecodeExt",
+221c221
+<                 return Js_exn.raiseError("Unknown extension type " + String(type_$2) + "");
+---
+>                 return Js_exn.raiseError("Unknown extension type " + String(type_$2));
+225c225
+<                 TAG: /* DecodeExt */4,
+---
+>                 TAG: "DecodeExt",
+234c234
+<                 TAG: /* Done */5,
+---
+>                 TAG: "Done",
+242c242
+<                 TAG: /* Done */5,
+---
+>                 TAG: "Done",
+250c250
+<                 TAG: /* Done */5,
+---
+>                 TAG: "Done",
+258c258
+<                 TAG: /* Done */5,
+---
+>                 TAG: "Done",
+266c266
+<                 TAG: /* Done */5,
+---
+>                 TAG: "Done",
+276c276
+<                 TAG: /* Done */5,
+---
+>                 TAG: "Done",
+284c284
+<                 TAG: /* Done */5,
+---
+>                 TAG: "Done",
+292c292
+<                 TAG: /* Done */5,
+---
+>                 TAG: "Done",
+300c300
+<                 TAG: /* Done */5,
+---
+>                 TAG: "Done",
+311c311
+<                 TAG: /* Done */5,
+---
+>                 TAG: "Done",
+319c319
+<                 return Js_exn.raiseError("Unknown extension type " + String(type_$3) + "");
+---
+>                 return Js_exn.raiseError("Unknown extension type " + String(type_$3));
+323c323
+<                 TAG: /* DecodeExt */4,
+---
+>                 TAG: "DecodeExt",
+332c332
+<                 return Js_exn.raiseError("Unknown extension type " + String(type_$4) + "");
+---
+>                 return Js_exn.raiseError("Unknown extension type " + String(type_$4));
+336c336
+<                 TAG: /* DecodeExt */4,
+---
+>                 TAG: "DecodeExt",
+346c346
+<                   TAG: /* DecodeExt */4,
+---
+>                   TAG: "DecodeExt",
+354c354
+<                 return Js_exn.raiseError("Unknown extension type " + String(type_$5) + "");
+---
+>                 return Js_exn.raiseError("Unknown extension type " + String(type_$5));
+358c358
+<                 TAG: /* DecodeExt */4,
+---
+>                 TAG: "DecodeExt",
+368c368
+<                   TAG: /* DecodeExt */4,
+---
+>                   TAG: "DecodeExt",
+376c376
+<                 return Js_exn.raiseError("Unknown extension type " + String(type_$6) + "");
+---
+>                 return Js_exn.raiseError("Unknown extension type " + String(type_$6));
+380c380
+<                 TAG: /* DecodeExt */4,
+---
+>                 TAG: "DecodeExt",
+389c389
+<                 return Js_exn.raiseError("Unknown extension type " + String(type_$7) + "");
+---
+>                 return Js_exn.raiseError("Unknown extension type " + String(type_$7));
+393c393
+<                 TAG: /* DecodeExt */4,
+---
+>                 TAG: "DecodeExt",
+402c402
+<                 TAG: /* DecodeString */0,
+---
+>                 TAG: "DecodeString",
+410c410
+<                 TAG: /* DecodeString */0,
+---
+>                 TAG: "DecodeString",
+418c418
+<                 TAG: /* DecodeString */0,
+---
+>                 TAG: "DecodeString",
+426c426
+<                 TAG: /* DecodeArray */1,
+---
+>                 TAG: "DecodeArray",
+435c435
+<                 TAG: /* DecodeArray */1,
+---
+>                 TAG: "DecodeArray",
+444c444
+<                 TAG: /* DecodeMap */2,
+---
+>                 TAG: "DecodeMap",
+453c453
+<                 TAG: /* DecodeMap */2,
+---
+>                 TAG: "DecodeMap",
+462c462
+<           return Js_exn.raiseError("Unknown header " + String(header) + "");
+---
+>           return Js_exn.raiseError("Unknown header " + String(header));
+467c467
+<           TAG: /* Done */5,
+---
+>           TAG: "Done",
+472,473c472,473
+<       switch (state.TAG | 0) {
+<         case /* DecodeString */0 :
+---
+>       switch (state.TAG) {
+>         case "DecodeString" :
+479c479
+<               TAG: /* Done */5,
+---
+>               TAG: "Done",
+483c483
+<         case /* DecodeArray */1 :
+---
+>         case "DecodeArray" :
+487c487
+<               var match = decode$1(binary, /* ExpectHeader */0, cursor);
+---
+>               var match = decode$1(binary, "ExpectHeader", cursor);
+492c492
+<                 TAG: /* DecodeArray */1,
+---
+>                 TAG: "DecodeArray",
+499c499
+<               TAG: /* Done */5,
+---
+>               TAG: "Done",
+503c503
+<         case /* DecodeMap */2 :
+---
+>         case "DecodeMap" :
+507c507
+<               var match$1 = decode$1(binary, /* ExpectHeader */0, cursor);
+---
+>               var match$1 = decode$1(binary, "ExpectHeader", cursor);
+510c510
+<                 return Js_exn.raiseError("Unexpected key type. Expected string, but got " + typeof key + "");
+---
+>                 return Js_exn.raiseError("Unexpected key type. Expected string, but got " + typeof key);
+512c512
+<               var match$2 = decode$1(binary, /* ExpectHeader */0, match$1[1]);
+---
+>               var match$2 = decode$1(binary, "ExpectHeader", match$1[1]);
+516c516
+<                 TAG: /* DecodeMap */2,
+---
+>                 TAG: "DecodeMap",
+523c523
+<               TAG: /* Done */5,
+---
+>               TAG: "Done",
+527c527
+<         case /* DecodeBinary */3 :
+---
+>         case "DecodeBinary" :
+532c532
+<               TAG: /* Done */5,
+---
+>               TAG: "Done",
+536c536
+<         case /* DecodeExt */4 :
+---
+>         case "DecodeExt" :
+541c541
+<               TAG: /* Done */5,
+---
+>               TAG: "Done",
+545c545
+<         case /* Done */5 :
+---
+>         case "Done" :
+554c554
+<   var match = decode$1(binary$1, /* ExpectHeader */0, 0);
+---
+>   var match = decode$1(binary$1, "ExpectHeader", 0);
+558c558
+<     Js_exn.raiseError("Invalid input length, expected " + String(inputLength) + ", but got " + String(readLength) + "");
+---
+>     Js_exn.raiseError("Invalid input length, expected " + String(inputLength) + ", but got " + String(readLength));
